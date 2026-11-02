@@ -1,0 +1,95 @@
+/* رِواق — هوية المكتبة، الإصدار الثاني. ثمانية خط محلي اختياري؛ أميري وقاهرة بديلان متاحان للزوار. */
+:root{--ink:#2c2118;--ink-soft:#655144;--gold:#a97b3d;--gold-light:#e3c894;--paper:#f8f5ed;--cream:#f0e9dd;--paper-deep:#e9decb;--line:#d8c9b3;--dark:#211712;--dark2:#302016;--rust:#7b422e}
+body{background:var(--paper)}
+.announcement{height:34px;color:#eed6b2;background:linear-gradient(90deg,#201610,#3b271b 51%,#201610);border-bottom:1px solid #8a633d60;font-size:11px;font-weight:600}
+.announcement::before,.announcement::after{content:'◆';color:#bb8d4b;font-size:7px;opacity:.85}
+.site-header{height:88px;background:rgba(251,248,241,.97);border-bottom:1px solid #ddcdb6;box-shadow:0 4px 22px #3b2b1c09}
+.site-header::before{content:'';position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#b78d58 20%,#795130 50%,#b78d58 80%,transparent);opacity:.56}
+.brand{gap:12px}
+.brand-mark{position:relative;width:38px;height:42px;padding:9px 8px 8px;border:1px solid #a98557;border-bottom:3px double #a98557;border-radius:18px 18px 2px 2px;background:linear-gradient(145deg,#fbf3e5,#efe0c6);box-shadow:inset 0 0 0 3px #f7eee0,0 2px 7px #3b28171a;gap:3px;align-items:flex-end}
+.brand-mark span{width:5px;height:18px;border-radius:1px;background:#63402b;box-shadow:inset 1px 0 #ca9d69}
+.brand-mark span:nth-child(2){height:23px;background:#ab7742;transform:rotate(-7deg)}
+.brand-mark span:nth-child(3){height:17px;background:#493b2a}
+.brand-word{font-size:37px;color:#38271d;letter-spacing:-.4px}
+.brand-caption{color:#8a6c4b;font-weight:600;font-size:10px}
+.nav-link{font-size:12px;font-weight:600}
+.header-action{border-color:#cbb596;background:#fff9ee;color:#563b25;transition:background .2s,border-color .2s,transform .2s}
+.header-action:hover{background:#f2e6d2;border-color:#ad8652;transform:translateY(-1px)}
+.hero{background:radial-gradient(ellipse at 78% 30%,#fffdf8 0%,#f7f1e6 44%,transparent 73%),radial-gradient(ellipse at 16% 90%,#dcc7a477,transparent 46%),#f4eee3;isolation:isolate}
+.hero::before{content:'';pointer-events:none;position:absolute;inset:0;background-image:radial-gradient(#79552b .55px,transparent .65px);background-size:10px 10px;opacity:.055;z-index:-1}
+.hero-grid{min-height:680px;gap:58px}
+.hero-copy{padding-top:78px}
+.hero-copy::before{content:'';display:block;width:48px;height:4px;margin-bottom:28px;background:linear-gradient(90deg,#b5874c,#d5b88a,#f4e7d1);box-shadow:0 1px 0 #fff}
+.eyebrow{font-size:12px;color:#876438;letter-spacing:.1px}
+.eyebrow-line{width:26px}
+.hero h1{letter-spacing:-.65px;line-height:1.22;font-weight:400;margin:26px 0 24px;text-wrap:balance}
+.hero h1 em{color:#a7773e;position:relative}
+.hero h1 em::after{content:'';position:absolute;bottom:.08em;right:0;width:100%;height:1px;background:#bd925b;opacity:.56}
+.hero-lead{font-size:15px;color:#665647;max-width:470px;line-height:2.15}
+.hero-bottom{font-size:20px;margin-top:65px;color:#806c52}
+.hero-bottom::after{content:'';height:1px;width:55px;background:#bea57d}
+.btn-gold{background:#a77b43;color:#fff8e9;box-shadow:0 4px 0 #76502f,0 10px 20px #4e30181a}
+.btn-gold:hover{background:#ba8b4e}
+.btn-gold:active{transform:translateY(2px);box-shadow:0 2px 0 #76502f}
+.hero-visual{filter:drop-shadow(0 15px 24px #5c3b1c17)}
+.visual-arch{box-shadow:inset 0 0 0 5px #4c2c1c,inset 0 0 65px #120c08,18px 25px 42px #3d271b2b}
+.hero-seal{background:radial-gradient(circle at 35% 25%,#e6c790,#b88d50 70%);border-color:#f4dcb2;box-shadow:0 8px 18px #27160c34,inset 0 0 0 2px #8f6033}
+.hero-seal small{font-family:var(--sans);font-size:8px;letter-spacing:0}
+.frame-label{font-size:10px;letter-spacing:1px}
+.marquee-divider{border-top:2px solid #ae8152;border-bottom:2px solid #3b251b;background:linear-gradient(90deg,#573622,#7b4d2f,#573622)}
+.collection{background:linear-gradient(#f8f5ed,#f8f5ed 70%,#f4eee3)}
+.section-header{margin-bottom:40px}
+.section-header h2,.about-copy h2{line-height:1.22;text-wrap:balance}
+.section-header p{font-size:13px;line-height:1.9}
+.section-kicker{font-size:11px;letter-spacing:.3px}
+.section-kicker>span{width:34px;height:34px;background:#eee1ce;border:1px solid #b99362;color:#80562e;box-shadow:inset 0 0 0 3px #f8f2e7}
+.library-controls{border-color:#cdbb9f;padding:18px 0}
+.filter{border:1px solid transparent;font-size:12px}
+.filter.active,.filter:hover{background:#453024;color:#f9eedc}
+.search-field{border:1px solid #d8c5a9;background:#fffdf7;padding:9px 12px;width:225px}
+.search-field:focus-within{border-color:#a77b43;box-shadow:0 0 0 2px #c9a9764a}
+.book-count{font-size:11px;color:#81694e;margin-top:30px}
+.books-grid{row-gap:50px}
+.book-card{transition:transform .25s ease}
+.book-card:hover{transform:translateY(-5px)}
+.book-cover-button{display:block;position:relative;padding-bottom:12px}
+.book-cover-button::after{content:'';position:absolute;bottom:1px;inset-inline:-4px;height:14px;background:linear-gradient(to bottom,#cba06c 0 18%,#885a34 18% 50%,#5d3823 50% 85%,#3c2518 100%);border-top:1px solid #e9cda3;box-shadow:0 7px 9px #442c1b2b;z-index:3}
+.book-art{background:linear-gradient(90deg,#b3a08a2c 0 1px,transparent 1px calc(100% - 1px),#b3a08a2c calc(100% - 1px)),radial-gradient(ellipse at 50% 20%,#f0e7da,#dccfbc 85%);border:1px solid #d4c3aa;padding:19px 24px 14px;box-shadow:inset 0 0 18px #846c4b17}
+.book-art::before{content:'';position:absolute;inset:9px;border:1px solid #b9a1824d;pointer-events:none}
+.book-card:hover .book-art{background:linear-gradient(120deg,#f1e9db,#d5bea0)}
+.book-card .book-art img{box-shadow:7px 11px 13px #2f1b0b50,-1px 1px 2px #30201638}
+.book-status{border:1px solid #c4a778;color:#5d452d;font-size:9px;box-shadow:0 2px 9px #33221122}
+.book-info{padding:20px 5px 0}
+.book-genre{color:#906737;font-size:10px;font-weight:700}
+.book-title{font-size:24px;line-height:1.4;margin-top:9px}
+.book-author{font-size:11px;line-height:1.8;color:#806f5f}
+.book-stars{color:#a97836}
+.shelf-footnote{margin-top:66px;font-size:21px}
+.reading-banner{background:linear-gradient(115deg,#6a4230,#35241b 70%);border-block:1px solid #b08350}
+.reading-banner h2{font-size:46px}
+.reading-banner p{font-size:13px;line-height:2.15}
+.journal-section{background:linear-gradient(145deg,#efe7da,#f6f0e6)}
+.journal-card{background:#fdfaf3;border-color:#d5c1a4;border-top:4px double #b48d57;padding-top:35px;box-shadow:0 10px 30px #4b352211,0 1px 0 #fff inset;transition:transform .22s,box-shadow .22s}
+.journal-card:hover{transform:translateY(-4px);box-shadow:0 18px 34px #4b35221b}
+.journal-card h3{font-size:31px}
+.journal-card p{color:#614f40;font-size:13px}
+.journal-prompt{background:linear-gradient(130deg,#54392b,#34241c);border-color:#c19a60}
+.journal-prompt p{color:#dfd1c1}
+.journal-card .journal-category{font-size:11px}
+.journal-card .journal-meta{font-size:11px}
+.goodreads-section{background:radial-gradient(circle at 3% 20%,#b38e5b12,transparent 43%),repeating-linear-gradient(105deg,#ffffff03 0 1px,transparent 1px 18px),#251b16}
+.goodreads-preview{border:8px solid #e7dbc8;outline:1px solid #9b774c;box-shadow:12px 16px 0 #0504033a,0 16px 35px #0003}
+.preview-title{background:#f9f5eb}
+.widget-stage{background:#fbf8f2}
+.goodreads-side h2{line-height:1.25}
+.goodreads-side>p{font-size:13px}
+.about-art{box-shadow:10px 12px 0 #d4c0a3}
+.about-art:before{border-color:#b89564}
+.about-circle{box-shadow:0 0 0 8px #e8d5b7,0 0 0 9px #c5ab85}
+.about-copy>p{font-size:14px;color:#655244}
+.site-footer{background:linear-gradient(#251a14,#1b1410);border-top:4px solid #a37b4b}
+.footer-brand{letter-spacing:-.4px}
+.footer-links a:hover,.footer-links button:hover{color:#e6bd7d}
+@media(max-width:900px){.hero-grid{gap:22px}.hero h1{line-height:1.25}.book-art{padding:17px 20px 14px}}
+@media(max-width:650px){.announcement{height:29px;font-size:9px;gap:6px}.announcement::before,.announcement::after{display:none}.site-header{height:67px}.brand{gap:8px}.brand-mark{width:32px;height:36px;padding:8px 6px 6px}.brand-word{font-size:30px}.primary-nav{top:67px}.hero-copy{padding-top:45px}.hero-copy::before{margin-bottom:20px}.hero h1{letter-spacing:0;line-height:1.27;margin:20px 0 14px}.hero-lead{font-size:13px;line-height:2.05}.hero-bottom{font-size:17px;margin-top:36px}.hero-bottom::after{display:none}.hero-visual{margin-top:4px}.section-header{gap:14px}.section-header h2,.about-copy h2{font-size:45px}.section-header p{font-size:12px}.filter{font-size:10px;padding:8px}.search-field{width:auto;flex:1;padding:7px 10px}.books-grid{row-gap:34px}.book-art{padding:13px 15px 10px}.book-art::before{inset:6px}.book-cover-button::after{height:11px}.book-info{padding:14px 2px 0}.book-title{font-size:21px}.book-author{font-size:10px}.shelf-footnote{margin-top:43px;font-size:16px}.reading-banner h2{font-size:36px}.journal-card h3{font-size:28px}.goodreads-preview{border-width:5px}.about-art{box-shadow:6px 8px 0 #d4c0a3}}
+@media(prefers-reduced-motion:reduce){.book-card,.journal-card,.header-action{transition:none}}
