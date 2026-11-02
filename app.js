@@ -41,7 +41,7 @@
   function attachImageFallback(root){$$('img',root).forEach(img=>img.addEventListener('error',()=>{const book=data.books.find(b=>b.cover===img.getAttribute('src'));const fallback=document.createElement('div');fallback.className='fallback-cover';fallback.textContent=(book?.title||'كتاب');img.replaceWith(fallback);},{once:true}));}
   function stars(rating){return rating?`<div class="book-stars" aria-label="التقييم: ${rating} من 5">${'★'.repeat(rating)}<span class="empty">${'☆'.repeat(5-rating)}</span></div>`:`<div class="book-stars unrated">لم يُقيّم بعد</div>`;}
   function syncBrand(){
-    $('#brand-name').textContent=data.siteName;$('#footer-brand').textContent=data.siteName;document.title=`${data.siteName} | مكتبة شخصية`;
+    $('#brand-name').textContent=data.siteName;$('.brand').classList.toggle('brand-custom-name',data.siteName.trim()!=='رِواق');$('#footer-brand').textContent=data.siteName;document.title=`${data.siteName} | مكتبة شخصية`;
     $('#hero-desc').textContent=data.subtitle;
     $('#profile-link').href=data.profileUrl||'https://www.goodreads.com/';
     $('#year').textContent=new Date().getFullYear();

@@ -1,0 +1,34 @@
+/* رِواق — Typography and letterforms, 03.
+   These local() font-face references do not distribute font files.
+   The two lettering PNGs are flattened artwork rendered from the user-provided font;
+   no installable/reusable font software is included or published.
+*/
+@font-face {font-family:'Riwaq Display Local';src:local('thmanyah serif display'),local('thmanyah serif display Regular'),local('thmanyahserifdisplay-Regular');font-style:normal;font-weight:400;font-display:swap;}
+@font-face {font-family:'Riwaq Display Local';src:local('thmanyah serif display Medium'),local('thmanyahserifdisplay-Medium');font-style:normal;font-weight:500;font-display:swap;}
+@font-face {font-family:'Riwaq Display Local';src:local('thmanyah serif display Bold'),local('thmanyahserifdisplay-Bold');font-style:normal;font-weight:700;font-display:swap;}
+@font-face {font-family:'Riwaq Text Local';src:local('thmanyah serif text'),local('thmanyah serif text Regular'),local('thmanyahseriftext-Regular');font-style:normal;font-weight:400;font-display:swap;}
+@font-face {font-family:'Riwaq Sans Local';src:local('thmanyah sans'),local('thmanyah sans Regular'),local('thmanyahsans-Regular');font-style:normal;font-weight:400;font-display:swap;}
+:root {
+  --serif:'Riwaq Display Local', 'Riwaq Thmanyah Display', 'Amiri', Georgia, serif;
+  --reading:'Riwaq Text Local', 'Riwaq Thmanyah Text', 'Amiri', Georgia, serif;
+  --sans:'Riwaq Sans Local','Cairo',Tahoma,sans-serif;
+}
+/* Brand mark is a ready-made transparent artwork. Personalising the library
+   title automatically replaces it with editable live text. */
+.brand-lettermark-art {display:block; width:auto; height:45px; max-width:94px; object-fit:contain; flex:none;}
+.brand:not(.brand-custom-name) .brand-word {position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap;}
+.brand.brand-custom-name .brand-lettermark-art {display:none;}
+.brand.brand-custom-name .brand-word {position:static; width:auto; height:auto; overflow:visible; clip-path:none; white-space:normal;}
+/* The Arabic hero headline is flattened to ensure its exact Thmanyah lettering
+   appears for all visitors without exposing font files on GitHub Pages. */
+.typographic-hero {margin:27px 0 24px!important; line-height:1!important;}
+.typographic-hero img {width:100%; max-width:520px; height:auto; aspect-ratio:971 / 472; object-fit:contain; object-position:right center;}
+/* Supporting editorial text retains proper live selectable Arabic type. */
+.hero-bottom, .shelf-footnote, .about-circle, .footer-top p, .journal-card p {font-family:var(--reading);}
+.primary-nav, .btn, .filter, .header-action, .search-field, .brand-caption {font-family:var(--sans);}
+.section-header h2, .reading-banner h2, .about-copy h2 {font-weight:500;}
+@media(max-width:650px) {
+  .brand-lettermark-art {height:36px; max-width:82px;}
+  .typographic-hero {margin:24px 0 15px!important;}
+  .typographic-hero img {width:100%; max-width:480px;}
+}
